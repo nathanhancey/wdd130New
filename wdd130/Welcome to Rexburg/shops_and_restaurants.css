@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#pageheader {
+    background-color: #173543;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#hero {
+    margin-top: 20px;
+}
+
+#hero-box {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #173543;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #173543;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.wireframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    max-width: 100%;
+}
+
+.box-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.history, .explore {
+    background-color: #efd6c7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.history header, .explore header {
+    background-color: #173543;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.history p, .explore p {
+    line-height: 1.5;
+    color: #333;
+}

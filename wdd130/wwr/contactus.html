@@ -1,0 +1,350 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<html lang="en">
+    <style>
+        .paragraph-font {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .paragraph-font-colored {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              color: #87f6ff;
+              background-color: #616163;
+              padding: 5px;
+        }
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #feedback {
+            background-color: antiquewhite;
+            padding: .5em;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Whitewater Rafting Vacations | Dry Oar Boating | Home"</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content"></div>
+    <div>
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/dry-oar-logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="#">Rates/Dates</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <body>
+                <div id="feedback">
+                    <script>
+                        // get the feedback div element so we can do something with it.
+                        const feedbackElement = document.getElementById('feedback');
+                        // get the form so we can read what was entered in it.
+                        const formElement = document.forms[0];
+                        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                        formElement.addEventListener('submit', function(e) {
+                            // stop the form from doing the default action.
+                            e.preventDefault();
+                            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                            // make the feedback element visible.
+                            feedbackElement.style.display = "block";
+                            // add a class to move everything down so our message doesn't cover it.
+                            document.body.classList.toggle('moveDown');
+                            return false;
+                        });
+                    </script>
+                </div>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <h2>
+                            Contact us with any questions or feedback you may have by filling out the form bellow.
+                        </h2>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Feedback:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </body>
+        </main>
+        <footer>
+            <p>Dry Oar &copy; 2023 - Nathan Hancey</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://x.com">
+                    <img src="images/x.png" height="64" width="64" alt="x icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+=======
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<html lang="en">
+    <style>
+        .paragraph-font {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+        }
+        .paragraph-font-colored {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 300;
+              color: #87f6ff;
+              background-color: #616163;
+              padding: 5px;
+        }
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            width: 400px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        #feedback {
+            background-color: antiquewhite;
+            padding: .5em;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
+    
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Whitewater Rafting Vacations | Dry Oar Boating | Home"</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content"></div>
+    <div>
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/dry-oar-logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="#">Rates/Dates</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <body>
+                <div id="feedback">
+                    <script>
+                        // get the feedback div element so we can do something with it.
+                        const feedbackElement = document.getElementById('feedback');
+                        // get the form so we can read what was entered in it.
+                        const formElement = document.forms[0];
+                        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                        formElement.addEventListener('submit', function(e) {
+                            // stop the form from doing the default action.
+                            e.preventDefault();
+                            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                            // make the feedback element visible.
+                            feedbackElement.style.display = "block";
+                            // add a class to move everything down so our message doesn't cover it.
+                            document.body.classList.toggle('moveDown');
+                            return false;
+                        });
+                    </script>
+                </div>
+                <form action="\my-handling-form-page.php" method="post">
+                    <ul>
+                        <h2>
+                            Contact us with any questions or feedback you may have by filling out the form bellow.
+                        </h2>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Feedback:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </body>
+        </main>
+        <footer>
+            <p>Dry Oar &copy; 2023 - Nathan Hancey</p>
+            <p><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://x.com">
+                    <img src="images/x.png" height="64" width="64" alt="x icon">
+                </a>
+                <a href="https://instagram.com">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+>>>>>>> 15587f814871552c4198050e5354d4fdf1daedc5
+</html>
