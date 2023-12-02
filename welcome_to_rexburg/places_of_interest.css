@@ -87,12 +87,22 @@ footer {
     max-width: 100%;
 }
 
+.page-header {
+    background-color: #173543;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .box-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.history, .explore {
+.yellowstone, .explore {
     background-color: #efd6c7;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -100,7 +110,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.history header, .explore header {
+.yellowstone header, .explore header {
     background-color: #173543;
     color: #fff;
     padding: 10px;
@@ -108,7 +118,7 @@ footer {
     margin-bottom: 15px;
 }
 
-.history p, .explore p {
+.yellowstone p, .explore p {
     line-height: 1.5;
     color: #333;
 }
