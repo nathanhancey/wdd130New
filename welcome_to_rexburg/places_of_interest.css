@@ -107,7 +107,9 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 20px auto; 
+    max-width: 800pxs;
+    
 }
 
 .yellowstone header, .explore header {
