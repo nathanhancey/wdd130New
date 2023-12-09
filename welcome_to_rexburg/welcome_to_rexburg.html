@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rexburg</title>
+    <link rel="stylesheet" type="text/css" href="welcome_to_rexburg.css">
     <style>
+        /* Your CSS styles here */
         .paragraph-font {
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
         }
         .paragraph-font-colored {
-              font-family: 'Roboto', sans-serif;
-              font-weight: 300;
-              color: #87f6ff;
-              background-color: #616163;
-              padding: 5px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #87f6ff;
+            background-color: #616163;
+            padding: 5px;
         }
         #hero-box {
             width: 100%;
-            height: 300px; /* Set the desired height for the cropped image */
+            height: 300px;
             overflow: hidden;
             padding-bottom: 20px;
         }
@@ -27,7 +33,8 @@
             background-color: #173543;
         }
         body {
-        font-family: "Lato", sans-serif;
+            font-family: "Lato", sans-serif;
+            margin: 0; /* Remove default margin to ensure full width and height */
         }
         .sidenav {
             height: 100%;
@@ -41,86 +48,84 @@
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Distribute links equally across the height */
+            justify-content: space-between;
             padding-top: 20px;
         }
-
         .sidenav a {
             flex: 1;
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 25px;
+            font-size: 16px;
             color: white;
             display: flex;
             align-items: center;
             font-family: "Lato", sans-serif;
         }
-
         .sidenav a:hover {
             color: white;
             text-decoration: underline;
             font-family: "Lato", sans-serif;
         }
-        
     </style>
-    <link rel="stylesheet" type="text/css" href="welcome_to_rexburg.css">
-    <head>
-        <div class="sidenav">
-                <a href="welcome_to_rexburg.html">Home</a>
-                <a href="places_of_interest.html">Places of Interest</a>
-                <a href="shops_and_restaurants.html">Shops and Restaurants</a>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="welcome_to_rexburg.html">Home</a>
+        <a href="places_of_interest.html">Places of Interest</a>
+        <a href="shops_and_restaurants.html">Shops and Restaurants</a>
+    </div>
+
+    <div id="content"></div>
+
+    <header id="pageheader">
+        <a id="logo_link" href="welcome_to_rexburg.html">
+            <img class="logo" src="Images/Welcome_to_Rexburg_logo.jpeg" alt="Welcome_to_Rexburg_logo" width="300" height="300">
+        </a>
+        <h1>Welcome to Rexburg</h1>
+        <nav>
+            <a href="welcome_to_rexburg.html">Home</a>
+            <a href="places_of_interest.html">Places of Interest</a>
+            <a href="shops_and_restaurants.html">Shops and Restaurants</a>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="Images/rexburg_drone_shot.jpg" style="width: 100%;" alt="rexburg drone shot">
         </div>
-    </head>
-    <body>
-        <div id="content"></div>
-        <div>
-            <header id="pageheader">
-                <a id="logo_link" href="welcome_to_rexburg.html">
-                    <img class="logo" src="Images/Welcome_to_Rexburg_logo.jpeg" alt="Welcome_to_Rexburg_logo" width="300" height="300">
-                </a>
-                <h1>Welcome to Rexburg</h1>
-                <nav>
-                    <a href="welcome_to_rexburg.html">Home</a>
-                    <a href="places_of_interest.html">Places of Interest</a>
-                    <a href="shops_and_restaurants.html">Shops and Restaurants</a>
-                </nav>
+    </div>
+
+    <main class="info">
+        <section class="history box-container">
+            <header>
+                History of Rexburg:
             </header>
-            <div id="hero">
-                <div id="hero-box">
-                    <img id="hero-img" src="Images/rexburg_drone_shot.jpg" style="width: 100%;" alt="rexburg drone shot">
-                </div>
-            </div>
-            <main class="info">
-                <section class="history box-container">
-                    <header>
-                        History of Rexburg:
-                    </header>
-                    <p>
-                        Founded in 1883 by Thomas Edwin Ricks, Rexburg, Idaho, has a vibrant history. 
-                        Rexburg was founded by settelers who set up on the banks of the Teton River. These setteler were LDS Church member who, in 1883
-                        were instructed by Thomas E Ricks to settle the valley. Rexburg is also honored by the USS Rexburg, a Navy research ship named 
-                        after the city. Just 5 years after setteling the locals founded Ricks Academy now BYU-Idaho. BYU-idaho has over 19,000 students 
-                        atteding each semester.
-                    </p>
-                </section>
-                <section class="explore box-container">
-                    <header>
-                        Explore Rexburg:
-                    </header>
-                    <p>
-                        Nestled at an elevation of 4,865 feet, Rexburg offers a unique geographical experiences. 
-                        The city sits atop a shield volcano, providing a picturesque backdrop. With its close proximity to the St. Anthony Sand Dunes, 
-                        Yellowstone National Park's West Entrance, and the stunning Teton Range, Rexburg is an ideal base for exploring diverse natural 
-                        wonders and recreational opportunities. The area's volcanic history has left a lasting impact, enriching the soil and making 
-                        Rexburg renowned for its great Idaho potatoes.
-                    </p>
-                </section>
-            </main>
-            <footer>
-                <p>Welcome to Rexburg &copy; 2023 - Nathan Hancey</p>
-                <p><a href="personal_site_plan.html">Site Plan</a></p>
-                <p>Wireframe:</p>
-            </footer>
-        </div>
-    </body>
+            <p>
+                Founded in 1883 by Thomas Edwin Ricks, Rexburg, Idaho, has a vibrant history. 
+                Rexburg was founded by settlers who set up on the banks of the Teton River. These settlers were LDS Church members who, in 1883,
+                were instructed by Thomas E Ricks to settle the valley. Rexburg is also honored by the USS Rexburg, a Navy research ship named 
+                after the city. Just 5 years after settling, the locals founded Ricks Academy now BYU-Idaho. BYU-Idaho has over 19,000 students 
+                attending each semester.
+            </p>
+        </section>
+        <section class="explore box-container">
+            <header>
+                Explore Rexburg:
+            </header>
+            <p>
+                Nestled at an elevation of 4,865 feet, Rexburg offers a unique geographical experience. 
+                The city sits atop a shield volcano, providing a picturesque backdrop. With its close proximity to the St. Anthony Sand Dunes, 
+                Yellowstone National Park's West Entrance, and the stunning Teton Range, Rexburg is an ideal base for exploring diverse natural 
+                wonders and recreational opportunities. The area's volcanic history has left a lasting impact, enriching the soil and making 
+                Rexburg renowned for its great Idaho potatoes.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Welcome to Rexburg &copy; 2023 - Nathan Hancey</p>
+        <p><a href="personal_site_plan.html">Site Plan</a></p>
+        <p>Wireframe:</p>
+    </footer>
+</body>
 </html>
