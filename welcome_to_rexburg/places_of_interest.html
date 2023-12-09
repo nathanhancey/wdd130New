@@ -13,32 +13,39 @@
               padding: 5px;
         }
         body {
-        font-family: "Lato", sans-serif;
+            font-family: "Lato", sans-serif;
         }
         .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #173543;
-        border-right: 10px solid white;
-        overflow-x: hidden;
-        padding-top: 20px;
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #173543;
+            border-right: 10px solid white;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute links equally across the height */
+            padding-top: 20px;
         }
+
         .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
-        display: block;
-        font-family: "Lato", sans-serif;
+            flex: 1;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-family: "Lato", sans-serif;
         }
+
         .sidenav a:hover {
-        color: white;
-        text-decoration: underline;
-        font-family: "Lato", sans-serif;
+            color: white;
+            text-decoration: underline;
+            font-family: "Lato", sans-serif;
         }
         
     </style>
@@ -66,7 +73,7 @@
                 Places of Interest
         </header>
         <main class="info">
-            <section class="explore">
+            <section class="explore box-container">
                 <header>
                     Explore St. Anthony Sand Dunes:
                 </header>
@@ -80,7 +87,7 @@
                 </p>
                 <img style="width: 700px; height: 300px; object-fit: cover; display: block; margin: 20px auto;" src="Images/st_anthony_dunes.jpg" alt="st.anthonydunes">
             </section>
-            <section class="yellowstone">
+            <section class="yellowstone box-container">
                 <header>
                     Discover Yellowstone National Park:
                 </header>
@@ -99,7 +106,6 @@
             <p>Dry Oar &copy; 2023 - Nathan Hancey</p>
             <p><a href="personal_site_plan.html">Site Plan</a></p>
             <p>Wireframe:</p>
-            <img class="wireframe" src="Images/IMG_2602[1].jpg" alt="wireframe" width="300">
         </footer>
     </div>
 </body>

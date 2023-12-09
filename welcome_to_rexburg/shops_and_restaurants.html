@@ -16,30 +16,38 @@
         font-family: "Lato", sans-serif;
         }
         .sidenav {
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #173543;
-        border-right: 10px solid white;
-        overflow-x: hidden;
-        padding-top: 20px;
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #173543;
+            border-right: 10px solid white;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Distribute links equally across the height */
+            padding-top: 20px;
         }
+
         .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
-        display: block;
-        font-family: "Lato", sans-serif;
+            flex: 1;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-family: "Lato", sans-serif;
         }
+
         .sidenav a:hover {
-        color: white;
-        text-decoration: underline;
-        font-family: "Lato", sans-serif;
+            color: white;
+            text-decoration: underline;
+            font-family: "Lato", sans-serif;
         }
+        
         
     </style>
     <link rel="stylesheet" type="text/css" href="shops_and_restaurants.css">
@@ -62,33 +70,31 @@
                 <a href="shops_and_restaurants.html">Shops and Restaurants</a>
             </nav>
         </header>
-        <header>
-            <p>
-                Places to Shop and to Eat:
-            </p>
+        <header class="page-header">
+                Places to Shop and to Eat
         </header>
         <main class="info">
-            <section class="GamePulse">
+            <section class="GamePulse box-container">
                 <p>GamePulse</p>
                 <p>Open: 12pm-10pm</p>
                 <p>phone: (208)437-8060</p>
                 <p>Store: Gaming</p>
                 <p><a href="https://www.facebook.com/GamePulse/">GamePulse Facebook</a></p>
             </section>
-            <section class="Propertee">
+            <section class="Propertee box-container">
                 <p>Propertee</p>
                 <p>Open: 24 hours</p>
                 <p>Store: Clothing</p>
                 <p><a href="https://www.instagram.com/proper.tee/?hl=en">Propertee Instagram</a></p>
             </section>
-            <section class="Red Rabbit Grill">
+            <section class="Red Rabbit Grill box-container">
                 <p>Red Rabbit Grill</p>
                 <p>Open: 8am-9pm</p>
                 <p>phone: (208)715-0002</p>
                 <p>Restaurant: Dine in American</p>
                 <p><a href="https://www.redrabbitgrill.com/rexburg-home">Reb Rabbit Grill Website</a></p>
             </section>
-            <section class="Original Thai">
+            <section class="Original Thai box-container">
                 <p>Original Thai</p>
                 <p>Open: 11am-9pm</p>
                 <p>phone: (208)359-9660</p>
@@ -100,7 +106,7 @@
             <p>Dry Oar &copy; 2023 - Nathan Hancey</p>
             <p><a href="personal_site_plan.html">Site Plan</a></p>
             <p>Wireframe:</p>
-            <img class="wireframe" src="Images/IMG_2603[1].jpg" alt="wireframe" width="300">
+
         </footer>
     </div>
 </body>

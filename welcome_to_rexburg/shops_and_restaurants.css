@@ -11,10 +11,18 @@ body {
 #pageheader {
     background-color: #173543;
     color: #fff;
-    padding: 0px;
+    padding-bottom: 20px;
     text-align: center;
 }
-
+.page-header {
+    background-color: #173543;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
 .logo {
     display: block;
     margin: 0 auto;
@@ -88,16 +96,15 @@ footer {
 }
 
 .box-container {
-    max-width: 800px;
+    max-width: 400px;
+    max-height: 400px;
     margin: 0 auto;
-}
-
-.history, .explore {
     background-color: #efd6c7;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .history header, .explore header {
